@@ -1,0 +1,25 @@
+
+jobs:          # List of stages for jobs, and their order of execution
+  - build
+  - test
+  - deploy
+
+
+build the package:
+    stage: build
+    script:  
+       - echo "Build is being Created"
+
+
+Time to Test the Application:
+    stage: test
+    script:
+        - echo "The product is in testing Phase"
+
+
+
+the final step:
+    stage: deploy
+    script:
+        - echo "All the sptes which is useful for Deploing the Product"
+        - echo  "happy Ending"
